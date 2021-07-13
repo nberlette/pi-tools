@@ -1,29 +1,66 @@
-# pi-tools [![NPM version](https://badge.fury.io/js/pi-tools.svg)](https://npmjs.org/package/pi-tools) [![Build Status](https://travis-ci.com/nberlette/pi-tools.svg?branch=docs)](https://travis-ci.com/nberlette/pi-tools?branch=docs)
+# Overclocking
 
-> pi-tools: overclocking and more
+## Raspberry Pi 400
 
-## Installation
+The Pi 400 already runs at a factory 1.8 GHz, which is significantly faster than the 1.5 GHz of the 4B.
+We can take it a step further, however, and clock speeds of 2 GHz without any throttling. This is
+primarily thanks to the Pi 400's massive internal heatsink, which works quite well.
 
-```bash
-yarn add pi-tools
-# or
-npm install --save pi-tools
+Get started by adding **one** of these to your `/boot/config.txt` file.
+
+> Running Ubuntu on your Pi? Try `/system-boot/config.txt` instead.
+
+### First Timer: 1.9 GHz
+
+```ini
+arm_freq=1900
+over_voltage=4
 ```
 
-## Usage
+### Recommended: 2.0 GHz
 
-### CommonJS (`require`)
-
-```javascript
-const { Config } = require('pi-tools')
+```ini
+arm_freq=2000
+over_voltage=5
 ```
 
-### ECMAScript (`import`)
+### Performance: 2.1 GHz
 
-```javascript
-import { Config } from 'pi-tools'
+```ini
+arm_freq=2100
+over_voltage=6
 ```
 
-## License
+### Danger Zone: 2.2 GHz
 
-MIT © [Nicholas Berlette](https://github.com/nberlette)
+```ini
+arm_freq=2200
+over_voltage=8
+force_turbo=1
+```
+
+> **Warning**: the `force_turbo` bit _will_ void your warranty!
+
+## Raspberry Pi 4B
+
+Since the 4B runs at 1.5 GHz, it's wise to start around 1.8 GHz, instead of 2+ GHz right out the door.
+Active cooling is *mandatory* for overclocking the 4B. You will experience throttling almost immediately without adequate cooling.
+
+```ini
+arm_freq=1800
+over_voltage=4
+```
+
+- - -
+
+# Downloads
+
+## config.txt: snippets
+
+* [Complete `config.txt`; with comments/annotations - (2.7K)][download-complete-config]
+* [Complete `config.txt`; no comments, just config. - (705B)][download-minimal-config]
+* [Overclock `config.txt` snippet for 4B/400 (702B)][download-overclock-config]
+
+[download-overclock-config]: <https://raw.githubusercontent.com/nberlette/pi-tools/master/public/snippets/overclock.txt>
+[download-complete-config]: <https://raw.githubusercontent.com/nberlette/pi-tools/master/public/snippets/config.txt>
+[download-minimal-config]: <https://raw.githubusercontent.com/nberlette/pi-tools/master/public/snippets/config.min.txt>
