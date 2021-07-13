@@ -33,13 +33,10 @@ jspm_packages
 
 # Optional npm cache directory
 .npm
+.yarn
 
 # Optional REPL history
 .node_repl_history
-out/
-out/*
-out/**
-out/**/*
 .next/
 .next/*
 .next/**
