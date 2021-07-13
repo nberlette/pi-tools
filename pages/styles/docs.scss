@@ -1,0 +1,12 @@
+
+@media all and (max-width: 1024px) and (min-width: 768px)  {
+  
+  @at-root {
+      article.docs-container {
+      padding-left: 18rem !important;
+      padding-right: 0 !important;
+      position: relative;
+      left: 18rem;
+    }
+  }
+}
