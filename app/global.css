@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import "nextra-theme-docs/style.css";
+
+@layer base {
+  html {
+    scroll-padding-top: 6rem;
+  }
+}
