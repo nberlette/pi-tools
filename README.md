@@ -2,9 +2,10 @@
 
 ## Raspberry Pi 400
 
-The Pi 400 already runs at a factory 1.8 GHz, which is significantly faster than the 1.5 GHz of the 4B.
-We can take it a step further, however, and clock speeds of 2 GHz without any throttling. This is
-primarily thanks to the Pi 400's massive internal heatsink, which works quite well.
+The Pi 400 already runs at a factory 1.8 GHz, which is significantly faster than
+the 1.5 GHz of the 4B. We can take it a step further, however, and clock speeds
+of 2 GHz without any throttling. This is primarily thanks to the Pi 400's
+massive internal heatsink, which works quite well.
 
 Get started by adding **one** of these to your `/boot/config.txt` file.
 
@@ -43,23 +44,24 @@ force_turbo=1
 
 ## Raspberry Pi 4B
 
-Since the 4B runs at 1.5 GHz, it's wise to start around 1.8 GHz, instead of 2+ GHz right out the door.
-Active cooling is *mandatory* for overclocking the 4B. You will experience throttling almost immediately without adequate cooling.
+Since the 4B runs at 1.5 GHz, it's wise to start around 1.8 GHz, instead of 2+
+GHz right out the door. Active cooling is _mandatory_ for overclocking the 4B.
+You will experience throttling almost immediately without adequate cooling.
 
 ```ini
 arm_freq=1800
 over_voltage=4
 ```
 
-- - -
+---
 
 # Downloads
 
 ## config.txt: snippets
 
-* [Complete `config.txt`; with comments/annotations - (2.7K)][download-complete-config]
-* [Complete `config.txt`; no comments, just config. - (705B)][download-minimal-config]
-* [Overclock `config.txt` snippet for 4B/400 (702B)][download-overclock-config]
+- [Complete `config.txt`; with comments/annotations - (2.7K)][download-complete-config]
+- [Complete `config.txt`; no comments, just config. - (705B)][download-minimal-config]
+- [Overclock `config.txt` snippet for 4B/400 (702B)][download-overclock-config]
 
 [download-overclock-config]: <https://raw.githubusercontent.com/nberlette/pi-tools/master/public/snippets/overclock.txt>
 [download-complete-config]: <https://raw.githubusercontent.com/nberlette/pi-tools/master/public/snippets/config.txt>
