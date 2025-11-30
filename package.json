@@ -16,8 +16,7 @@
     "lint": "next lint",
     "start": "next start",
     "build": "next build",
-    "export": "next export",
-    "deploy": "next lint && next build && next export",
+    "deploy": "next lint && next build",
     "commit:pages": "touch out/.nojekyll && git add out && git commit -m 'chore: deploy to gh-pages'",
     "update:pages": "npm run commit:pages && git subtree push --prefix out origin gh-pages",
     "deploy:pages": "rm -rf node_modules/.cache && npm run deploy && npm run update:pages"
