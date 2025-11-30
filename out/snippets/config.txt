@@ -1,0 +1,103 @@
+
+          #.            #.                          #.
+#.#.#.                #.#.#.#.    #.#.      #.#.    #.    #.#.#.
+#.    #.  #. #.400.#    #.      #.    #.  #.    #.  #.  #.#.
+#.    #.  #.            #.      #.    #.  #.    #.  #.      #.#.
+#.#.#.    #.              #.#.    #.#.      #.#.    #.  #.#.#.
+#. -------------------------------------------------------------
+#. pi-tools: overclocking and more    <https://pi.berlette.com/>
+
+arm_64bit=1
+
+## ------------------------------------------------------------- ##
+##  More overclocking info <https://pi.berlette.com/#overclocking>   
+## ------------------------------------------------------------- ##
+
+## 1.8GHz (Pi 400 default)
+# arm_freq=1800
+# over_voltage=2
+
+## 1.9GHz
+# arm_freq=1900
+# over_voltage=4
+
+## 2.0GHz
+arm_freq=2000
+over_voltage=5
+
+## 2.1GHz 
+# arm_freq=2100
+# over_voltage=6
+
+## 2.2GHz
+# arm_freq=2200
+# over_voltage=8
+# force_turbo=1
+
+## ------------------------------------------------------------- ##
+## Other Peripherals                           
+## ------------------------------------------------------------- ##
+
+## SerialPort UART
+enable_uart=1
+
+## Audio
+dtparam=audio=on
+
+## i2c_arm is the same as i2c; the other i2c is internal for eeprom
+#dtparam=i2c_arm=on,i2c_arm_baudrate=400000
+
+## i2s
+#dtparam=i2s=on
+
+## SPI (Serial Peripheral Interface)
+#dtparam=spi=on
+
+## ------------------------------------------------------------- ##
+## CAN HAT - requires `dtparam=spi=on`
+## ------------------------------------------------------------- ##
+
+#dtoverlay=mcp2515-can0,oscillator=16000000,interrupt=23
+#dtoverlay=mcp2515-can1,oscillator=16000000,interrupt=25
+
+## ------------------------------------------------------------- ##
+## GPIO Shutdown; external power switch on I2C GPIO3 (falling edge)
+##  > this isn't used on the 400; it has a power button built in ;)
+## ------------------------------------------------------------- ##
+
+#dtoverlay=gpio-shutdown
+
+## ------------------------------------------------------------- ##
+## Framebuffer and Overscan 
+## ------------------------------------------------------------- ##
+
+max_framebuffers=2
+dtoverlay=vc4-kms-v3d
+
+## Override the console display size in pixels
+framebuffer_width=1280
+framebuffer_height=720
+
+#disable_overscan=0
+#overscan_left=16
+#overscan_right=16
+#overscan_top=16
+#overscan_bottom=16
+
+## ------------------------------------------------------------- ##
+## Displays: Compatibility / Troubleshooting
+## ------------------------------------------------------------- ##
+
+## safe mode 
+#hdmi_safe=1
+
+## See HDMI group/mode charts for values
+#hdmi_group=2
+#hdmi_mode=16
+
+## DVI/DMT: hdmi_drive=1 (no sound), hdmi_drive=2 (sound)
+hdmi_drive=2
+
+## Boost signal to HDMI ports
+#config_hdmi_boost=4
+hdmi_force_hotplug=1

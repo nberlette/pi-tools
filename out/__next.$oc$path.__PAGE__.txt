@@ -1,0 +1,98 @@
+1:"$Sreact.fragment"
+2:I[498099,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"TOCProvider"]
+3:I[211464,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"Sidebar"]
+4:I[201108,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"ClientWrapper"]
+6:I[304464,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"HeadingAnchor"]
+1b:I[244762,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"ToggleWordWrapButton"]
+1c:I[852227,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"CopyToClipboard"]
+1d:I[701005,["/_next/static/chunks/b278ef62ad8d8d3a.js","/_next/static/chunks/4a2cd4189fc7468e.js"],"OutletBoundary"]
+1e:"$Sreact.suspense"
+5:T711,# Overclocking
+
+## Raspberry Pi 400
+
+The Pi 400 already runs at a factory 1.8 GHz, which is significantly faster than the 1.5 GHz of the 4B.
+We can take it a step further, however, and clock speeds of 2 GHz without any throttling. This is
+primarily thanks to the Pi 400's massive internal heatsink, which works quite well.
+
+Get started by adding **one** of these to your `/boot/config.txt` file.
+
+> Running Ubuntu on your Pi? Check `/system-boot/config.txt` instead.
+
+### First Timer: 1.9 GHz
+
+```ini
+arm_freq=1900
+over_voltage=4
+```
+
+### Recommended: 2.0 GHz
+
+```ini
+arm_freq=2000
+over_voltage=5
+```
+
+### Performance: 2.1 GHz
+
+```ini
+arm_freq=2100
+over_voltage=6
+```
+
+### Danger Zone: 2.2 GHz
+
+```ini
+arm_freq=2200
+over_voltage=8
+force_turbo=1
+```
+
+> **Warning**: the `force_turbo` bit _will_ void your warranty!
+
+## Raspberry Pi 4B
+
+Since the 4B runs at 1.5 GHz, it's wise to start around 1.8 GHz, instead of 2+ GHz right out the door.
+Active cooling is a *mandatory* requirement for overclocking the 4B. You will experience throttling
+almost immediately without adequate cooling.
+
+```ini
+arm_freq=1800
+over_voltage=4
+```
+
+- - -
+
+# Downloads
+
+## config.txt: snippets
+
+* [Complete `config.txt`; with comments/annotations - (2.7K)][download-complete-config]
+* [Complete `config.txt`; no comments, just config. - (705B)][download-minimal-config]
+* [Overclock `config.txt` snippet for 4B/400 (702B)][download-overclock-config]
+
+{/*download references*/}
+[download-overclock-config]: <https://raw.githubusercontent.com/nberlette/pi-tools/master/public/snippets/overclock.txt>
+[download-complete-config]: <https://raw.githubusercontent.com/nberlette/pi-tools/master/public/snippets/config.txt>
+[download-minimal-config]: <https://raw.githubusercontent.com/nberlette/pi-tools/master/public/snippets/config.min.txt>0:{"buildId":"9EzFpJVmhh1GyQfPEBZPo","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L2",null,{"value":[{"value":"Raspberry Pi 400","id":"raspberry-pi-400","depth":2},{"value":"First Timer: 1.9 GHz","id":"first-timer-19-ghz","depth":3},{"value":"Recommended: 2.0 GHz","id":"recommended-20-ghz","depth":3},{"value":"Performance: 2.1 GHz","id":"performance-21-ghz","depth":3},{"value":"Danger Zone: 2.2 GHz","id":"danger-zone-22-ghz","depth":3},{"value":"Raspberry Pi 4B","id":"raspberry-pi-4b","depth":2},{"value":"config.txt: snippets","id":"configtxt-snippets","depth":2}],"children":[["$","$L3",null,{}],["$","$L4",null,{"metadata":{"title":"Overclocking","filePath":"content/index.mdx","readingTime":{"text":"1 min read","minutes":0.755,"time":45300,"words":151},"timestamp":1764299304000},"sourceCode":"$5","children":[["$","div",null,{"id":"nextra-skip-nav"}],["$","main",null,{"data-pagefind-body":true,"children":[["$","h1",null,{"className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-bold x:mt-2 x:text-4xl","children":["Overclocking","$undefined"]}],"\n",["$","h2",null,{"id":"raspberry-pi-400","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["Raspberry Pi 400",["$","$L6",null,{"id":"raspberry-pi-400"}]]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"The Pi 400 already runs at a factory 1.8 GHz, which is significantly faster than the 1.5 GHz of the 4B.\nWe can take it a step further, however, and clock speeds of 2 GHz without any throttling. This is\nprimarily thanks to the Pi 400’s massive internal heatsink, which works quite well."}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["Get started by adding ","$L7"," of these to your ","$L8"," file."]}],"\n","$L9","\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11","\n","$L12","\n","$L13","\n","$L14","\n","$L15","\n","$L16","\n","$L17","\n","$L18","\n","$L19","\n"]}]]}]]}]}],null,"$L1a"]}],"loading":null,"isPartial":false}
+7:["$","strong",null,{"children":"one"}]
+8:["$","code",null,{"className":"nextra-code","dir":"ltr","children":["$","span",null,{"data-line":"","children":["$","span",null,{"style":{"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"},"children":"/boot/config.txt"}]}]}]
+9:["$","blockquote",null,{"className":"x:not-first:mt-[1.25em] x:border-gray-300 x:italic x:text-gray-700 x:dark:border-gray-700 x:dark:text-gray-400 x:border-s-2 x:ps-[1.5em]","children":["\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["Running Ubuntu on your Pi? Check ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":["$","span",null,{"data-line":"","children":["$","span",null,{"style":{"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"},"children":"/system-boot/config.txt"}]}]}]," instead."]}],"\n"]}]
+a:["$","h3",null,{"id":"first-timer-19-ghz","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["First Timer: 1.9 GHz",["$","$L6",null,{"id":"first-timer-19-ghz"}]]}]
+b:["$","div",null,{"className":"nextra-code x:relative x:not-first:mt-[1.25em]","children":["$undefined",["$","pre",null,{"className":"x:group x:focus-visible:nextra-focus x:overflow-x-auto x:subpixel-antialiased x:text-[.9em] x:bg-white x:dark:bg-black x:py-4 x:ring-1 x:ring-inset x:ring-gray-300 x:dark:ring-neutral-700 x:contrast-more:ring-gray-900 x:contrast-more:dark:ring-gray-50 x:contrast-more:contrast-150 x:rounded-md not-prose","tabIndex":"0","children":[["$","div",null,{"className":"x:group-hover:opacity-100 x:group-focus:opacity-100 x:opacity-0 x:transition x:focus-within:opacity-100 x:flex x:gap-1 x:absolute x:right-4 x:top-2","children":[["$","$L1b",null,{"children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"currentColor","height":"1em","children":["$","path",null,{"d":"M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"}]}]}],["$","$L1c",null,{"className":""}]]}],["$","code",null,{"className":"nextra-code","dir":"ltr","children":[["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"arm_freq"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=1900"}]]}],"\n",["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"over_voltage"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=4"}]]}]]}]]}]]}]
+c:["$","h3",null,{"id":"recommended-20-ghz","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Recommended: 2.0 GHz",["$","$L6",null,{"id":"recommended-20-ghz"}]]}]
+d:["$","div",null,{"className":"nextra-code x:relative x:not-first:mt-[1.25em]","children":["$undefined",["$","pre",null,{"className":"x:group x:focus-visible:nextra-focus x:overflow-x-auto x:subpixel-antialiased x:text-[.9em] x:bg-white x:dark:bg-black x:py-4 x:ring-1 x:ring-inset x:ring-gray-300 x:dark:ring-neutral-700 x:contrast-more:ring-gray-900 x:contrast-more:dark:ring-gray-50 x:contrast-more:contrast-150 x:rounded-md not-prose","tabIndex":"0","children":[["$","div",null,{"className":"x:group-hover:opacity-100 x:group-focus:opacity-100 x:opacity-0 x:transition x:focus-within:opacity-100 x:flex x:gap-1 x:absolute x:right-4 x:top-2","children":[["$","$L1b",null,{"children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"currentColor","height":"1em","children":["$","path",null,{"d":"M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"}]}]}],["$","$L1c",null,{"className":""}]]}],["$","code",null,{"className":"nextra-code","dir":"ltr","children":[["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"arm_freq"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=2000"}]]}],"\n",["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"over_voltage"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=5"}]]}]]}]]}]]}]
+e:["$","h3",null,{"id":"performance-21-ghz","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Performance: 2.1 GHz",["$","$L6",null,{"id":"performance-21-ghz"}]]}]
+f:["$","div",null,{"className":"nextra-code x:relative x:not-first:mt-[1.25em]","children":["$undefined",["$","pre",null,{"className":"x:group x:focus-visible:nextra-focus x:overflow-x-auto x:subpixel-antialiased x:text-[.9em] x:bg-white x:dark:bg-black x:py-4 x:ring-1 x:ring-inset x:ring-gray-300 x:dark:ring-neutral-700 x:contrast-more:ring-gray-900 x:contrast-more:dark:ring-gray-50 x:contrast-more:contrast-150 x:rounded-md not-prose","tabIndex":"0","children":[["$","div",null,{"className":"x:group-hover:opacity-100 x:group-focus:opacity-100 x:opacity-0 x:transition x:focus-within:opacity-100 x:flex x:gap-1 x:absolute x:right-4 x:top-2","children":[["$","$L1b",null,{"children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"currentColor","height":"1em","children":["$","path",null,{"d":"M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"}]}]}],["$","$L1c",null,{"className":""}]]}],["$","code",null,{"className":"nextra-code","dir":"ltr","children":[["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"arm_freq"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=2100"}]]}],"\n",["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"over_voltage"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=6"}]]}]]}]]}]]}]
+10:["$","h3",null,{"id":"danger-zone-22-ghz","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Danger Zone: 2.2 GHz",["$","$L6",null,{"id":"danger-zone-22-ghz"}]]}]
+11:["$","div",null,{"className":"nextra-code x:relative x:not-first:mt-[1.25em]","children":["$undefined",["$","pre",null,{"className":"x:group x:focus-visible:nextra-focus x:overflow-x-auto x:subpixel-antialiased x:text-[.9em] x:bg-white x:dark:bg-black x:py-4 x:ring-1 x:ring-inset x:ring-gray-300 x:dark:ring-neutral-700 x:contrast-more:ring-gray-900 x:contrast-more:dark:ring-gray-50 x:contrast-more:contrast-150 x:rounded-md not-prose","tabIndex":"0","children":[["$","div",null,{"className":"x:group-hover:opacity-100 x:group-focus:opacity-100 x:opacity-0 x:transition x:focus-within:opacity-100 x:flex x:gap-1 x:absolute x:right-4 x:top-2","children":[["$","$L1b",null,{"children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"currentColor","height":"1em","children":["$","path",null,{"d":"M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"}]}]}],["$","$L1c",null,{"className":""}]]}],["$","code",null,{"className":"nextra-code","dir":"ltr","children":[["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"arm_freq"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=2200"}]]}],"\n",["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"over_voltage"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=8"}]]}],"\n",["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"force_turbo"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=1"}]]}]]}]]}]]}]
+12:["$","blockquote",null,{"className":"x:not-first:mt-[1.25em] x:border-gray-300 x:italic x:text-gray-700 x:dark:border-gray-700 x:dark:text-gray-400 x:border-s-2 x:ps-[1.5em]","children":["\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":[["$","strong",null,{"children":"Warning"}],": the ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":["$","span",null,{"data-line":"","children":["$","span",null,{"style":{"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"},"children":"force_turbo"}]}]}]," bit ",["$","em",null,{"children":"will"}]," void your warranty!"]}],"\n"]}]
+13:["$","h2",null,{"id":"raspberry-pi-4b","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["Raspberry Pi 4B",["$","$L6",null,{"id":"raspberry-pi-4b"}]]}]
+14:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["Since the 4B runs at 1.5 GHz, it’s wise to start around 1.8 GHz, instead of 2+ GHz right out the door.\nActive cooling is a ",["$","em",null,{"children":"mandatory"}]," requirement for overclocking the 4B. You will experience throttling\nalmost immediately without adequate cooling."]}]
+15:["$","div",null,{"className":"nextra-code x:relative x:not-first:mt-[1.25em]","children":["$undefined",["$","pre",null,{"className":"x:group x:focus-visible:nextra-focus x:overflow-x-auto x:subpixel-antialiased x:text-[.9em] x:bg-white x:dark:bg-black x:py-4 x:ring-1 x:ring-inset x:ring-gray-300 x:dark:ring-neutral-700 x:contrast-more:ring-gray-900 x:contrast-more:dark:ring-gray-50 x:contrast-more:contrast-150 x:rounded-md not-prose","tabIndex":"0","children":[["$","div",null,{"className":"x:group-hover:opacity-100 x:group-focus:opacity-100 x:opacity-0 x:transition x:focus-within:opacity-100 x:flex x:gap-1 x:absolute x:right-4 x:top-2","children":[["$","$L1b",null,{"children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"currentColor","height":"1em","children":["$","path",null,{"d":"M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"}]}]}],["$","$L1c",null,{"className":""}]]}],["$","code",null,{"className":"nextra-code","dir":"ltr","children":[["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"arm_freq"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=1800"}]]}],"\n",["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"over_voltage"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=4"}]]}]]}]]}]]}]
+16:["$","hr",null,{"className":"x:my-[2em] nextra-border"}]
+17:["$","h1",null,{"className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-bold x:mt-2 x:text-4xl","children":["Downloads","$undefined"]}]
+18:["$","h2",null,{"id":"configtxt-snippets","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["config.txt: snippets",["$","$L6",null,{"id":"configtxt-snippets"}]]}]
+19:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":["$","a",null,{"href":"https://raw.githubusercontent.com/nberlette/pi-tools/master/public/snippets/config.txt","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":[["Complete ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":["$","span",null,{"data-line":"","children":["$","span",null,{"style":{"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"},"children":"config.txt"}]}]}],"; with comments/annotations - (2.7K)"],false]}]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["$","a",null,{"href":"https://raw.githubusercontent.com/nberlette/pi-tools/master/public/snippets/config.min.txt","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":[["Complete ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":["$","span",null,{"data-line":"","children":["$","span",null,{"style":{"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"},"children":"config.txt"}]}]}],"; no comments, just config. - (705B)"],false]}]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["$","a",null,{"href":"https://raw.githubusercontent.com/nberlette/pi-tools/master/public/snippets/overclock.txt","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":[["Overclock ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":["$","span",null,{"data-line":"","children":["$","span",null,{"style":{"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"},"children":"config.txt"}]}]}]," snippet for 4B/400 (702B)"],false]}]}],"\n"]}]
+1a:["$","$L1d",null,{"children":["$","$1e",null,{"name":"Next.MetadataOutlet","children":"$@1f"}]}]
+1f:null

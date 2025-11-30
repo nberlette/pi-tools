@@ -1,0 +1,52 @@
+1:"$Sreact.fragment"
+2:I[498099,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"TOCProvider"]
+3:I[211464,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"Sidebar"]
+4:I[201108,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"ClientWrapper"]
+9:I[304464,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"HeadingAnchor"]
+a:I[701005,["/_next/static/chunks/b278ef62ad8d8d3a.js","/_next/static/chunks/4a2cd4189fc7468e.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+5:T5af,---
+title: "Raspberry Pi Pico (RP2040)"
+slug: "boards/rp2040"
+date: 2024-06-15
+description: |
+  The Raspberry Pi Pico is a low-cost, high-performance microcontroller board built around the RP2040 chip, designed for embedded applications and hobbyist projects. It features a dual-core ARM Cortex-M0+ processor, flexible I/O options, and is ideal for learning programming and electronics.
+tags:
+  - boards
+  - raspberry pi pico
+  - rp2040
+  - microcontroller
+  - embedded systems
+  - hobbyist
+  - iot
+categories:
+  - Hardware
+  - Raspberry Pi
+  - Microcontrollers
+  - Embedded Systems
+references:
+  - title: "Raspberry Pi Pico"
+    url: "https://www.raspberrypi.com/products/raspberry-pi-pico/"
+    publisher: "Raspberry Pi Foundation"
+    accessed: "2024-06-15"
+  - title: "RP2040 Datasheet"
+    url: "https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf"
+    publisher: "Raspberry Pi Foundation"
+    accessed: "2024-06-15"
+---
+
+# Raspberry Pi Pico (RP2040)
+
+The Raspberry Pi Pico is a low-cost, high-performance microcontroller board built around the RP2040 chip, designed for embedded applications and hobbyist projects. It features a dual-core ARM Cortex-M0+ processor, flexible I/O options, and is ideal for learning programming and electronics.
+
+## Specifications
+
+> [!IMPORTANT]
+>
+> This section is not yet complete. Please refer to the [RP2040 Datasheet].
+
+[RP2040 Datasheet]: https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf0:{"buildId":"9EzFpJVmhh1GyQfPEBZPo","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L2",null,{"value":[{"value":"Specifications","id":"specifications","depth":2}],"children":[["$","$L3",null,{}],["$","$L4",null,{"metadata":{"title":"Raspberry Pi Pico (RP2040)","slug":"boards/rp2040","date":"2024-06-15","description":"The Raspberry Pi Pico is a low-cost, high-performance microcontroller board built around the RP2040 chip, designed for embedded applications and hobbyist projects. It features a dual-core ARM Cortex-M0+ processor, flexible I/O options, and is ideal for learning programming and electronics.\n","tags":["boards","raspberry pi pico","rp2040","microcontroller","embedded systems","hobbyist","iot"],"categories":["Hardware","Raspberry Pi","Microcontrollers","Embedded Systems"],"references":[{"title":"Raspberry Pi Pico","url":"https://www.raspberrypi.com/products/raspberry-pi-pico/","publisher":"Raspberry Pi Foundation","accessed":"2024-06-15"},{"title":"RP2040 Datasheet","url":"https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf","publisher":"Raspberry Pi Foundation","accessed":"2024-06-15"}],"filePath":"content/boards/rp2040.mdx","readingTime":{"text":"1 min read","minutes":0.27,"time":16200,"words":54},"timestamp":1764299304000},"sourceCode":"$5","children":[["$","div",null,{"id":"nextra-skip-nav"}],["$","main",null,{"data-pagefind-body":true,"children":[["$","h1",null,{"className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-bold x:mt-2 x:text-4xl","children":["Raspberry Pi Pico (RP2040)","$undefined"]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"The Raspberry Pi Pico is a low-cost, high-performance microcontroller board built around the RP2040 chip, designed for embedded applications and hobbyist projects. It features a dual-core ARM Cortex-M0+ processor, flexible I/O options, and is ideal for learning programming and electronics."}],"\n",["$","h2",null,{"id":"specifications","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["Specifications","$L6"]}],"\n","$L7"]}]]}]]}]}],null,"$L8"]}],"loading":null,"isPartial":false}
+6:["$","$L9",null,{"id":"specifications"}]
+7:["$","div",null,{"className":"nextra-callout x:overflow-x-auto x:not-first:mt-[1.25em] x:flex x:rounded-lg x:border x:py-[.5em] x:pe-[1em] x:contrast-more:border-current! x:bg-purple-100 x:dark:bg-purple-900/30 x:text-purple-600 x:dark:text-purple-400 x:border-purple-600","children":[["$","div",null,{"className":"x:select-none x:text-[1.25em] x:ps-[.6em] x:pe-[.4em]","style":{"fontFamily":"\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""},"data-pagefind-ignore":"all","children":["$","svg",null,{"viewBox":"0 0 16 16","fill":"currentColor","height":".8em","className":"x:mt-[.3em]","children":["$","path",null,{"d":"M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"}]}]}],["$","div",null,{"className":"x:w-full x:min-w-0","children":[["$","b","0",{"children":"Important"}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["This section is not yet complete. Please refer to the ",["$","a",null,{"href":"https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["RP2040 Datasheet",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],"."]}],"\n"]}]]}]
+8:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+c:null

@@ -1,0 +1,87 @@
+1:"$Sreact.fragment"
+2:I[498099,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"TOCProvider"]
+3:I[211464,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"Sidebar"]
+4:I[201108,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"ClientWrapper"]
+9:I[304464,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"HeadingAnchor"]
+13:I[701005,["/_next/static/chunks/b278ef62ad8d8d3a.js","/_next/static/chunks/4a2cd4189fc7468e.js"],"OutletBoundary"]
+14:"$Sreact.suspense"
+:HL["/_next/static/media/disassembled.e8a874f9.webp","image"]
+:HL["/_next/static/media/diagram.ef0f0d3b.jpg","image"]
+:HL["/_next/static/media/box.f7537be4.jpg","image"]
+5:T9d8,---
+title: "Raspberry Pi 500"
+slug: "boards/500"
+date: 2025-11-09
+description: |
+  The Raspberry Pi 500 is a compact and powerful all-in-one computer that integrates the Raspberry Pi 5 SoC into a keyboard form factor. Designed for ease of use and portability, the Raspberry Pi 500 is ideal for educational purposes, programming, and general computing tasks.
+tags:
+  - boards
+  - raspberry pi 500
+  - raspberry pi
+  - all-in-one
+  - keyboard computer
+  - education
+  - programming
+categories:
+  - Hardware
+  - Raspberry Pi
+  - All-in-One Computers
+references:
+  - title: "Raspberry Pi 500"
+    url: "https://www.raspberrypi.com/products/raspberry-pi-500/"
+    publisher: "Raspberry Pi Foundation"
+    accessed: "2025-11-09"
+  - title: "Raspberry Pi 500 Datasheet"
+    url: "https://datasheets.raspberrypi.com/rpi-500/rpi-500-datasheet.pdf"
+    publisher: "Raspberry Pi Foundation"
+    accessed: "2025-11-09"
+---
+
+import diagram from "../../public/img/boards/500/diagram.jpg";
+import packaging from "../../public/img/boards/500/box.jpg";
+import disassembled from "../../public/img/boards/500/disassembled.webp";
+
+<img {...disassembled} alt="Raspberry Pi 500 Disassembled" className="my-4 rounded-lg shadow-md w-full h-auto" />
+
+# Raspberry Pi 500
+
+The Raspberry Pi 500 is a compact and powerful all-in-one computer that integrates the Raspberry Pi 5 SoC into a keyboard form factor. Designed for ease of use and portability, the Raspberry Pi 500 is ideal for educational purposes, programming, and general computing tasks.
+
+## Specifications
+
+<img {...diagram} alt="Raspberry Pi 500 Diagram" className="my-4 rounded-lg shadow-md w-full h-auto" />
+
+- **Compute**: 2.4GHz quad-core 64-bit Arm Cortex-A76 CPU
+  - 512KB/core L2 cache
+  - 2MB shared L3 cache
+  - plus cryptography extensions
+- **Memory**: 8GB LPDDR4X-4267 SDRAM
+- **Wi-Fi**: Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac Wi-Fi®
+- **Bluetooth**: 5.0, BLE
+- **LAN**: Gigabit Ethernet
+- **USB**: 2 × USB 3.0 port and 1 × USB 2.0 port
+- **GPIO**: Horizontal 40-pin GPIO header
+- **HDMI**: 2 × micro HDMI® port (supports up to 4Kp60)
+- **Video**: H.265 (4Kp60 decode)
+- **Graphics**: OpenGL ES 3.1 graphics, Vulkan 1.3
+- **Keyboard**: 78-, 79- or 83-key compact keyboard (depending on regional variant)
+- **Power**: 5V/4A DC via USB connector
+- **Storage**: 32GB Class A2 microSD included
+  - microSD card slot for operating system and data storage
+
+---
+
+<img {...packaging} alt="Raspberry Pi 500 Box" className="my-4 rounded-lg shadow-md w-full h-auto" />0:{"buildId":"9EzFpJVmhh1GyQfPEBZPo","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L2",null,{"value":[{"value":"Specifications","id":"specifications","depth":2}],"children":[["$","$L3",null,{}],["$","$L4",null,{"metadata":{"title":"Raspberry Pi 500","slug":"boards/500","date":"2025-11-09","description":"The Raspberry Pi 500 is a compact and powerful all-in-one computer that integrates the Raspberry Pi 5 SoC into a keyboard form factor. Designed for ease of use and portability, the Raspberry Pi 500 is ideal for educational purposes, programming, and general computing tasks.\n","tags":["boards","raspberry pi 500","raspberry pi","all-in-one","keyboard computer","education","programming"],"categories":["Hardware","Raspberry Pi","All-in-One Computers"],"references":[{"title":"Raspberry Pi 500","url":"https://www.raspberrypi.com/products/raspberry-pi-500/","publisher":"Raspberry Pi Foundation","accessed":"2025-11-09"},{"title":"Raspberry Pi 500 Datasheet","url":"https://datasheets.raspberrypi.com/rpi-500/rpi-500-datasheet.pdf","publisher":"Raspberry Pi Foundation","accessed":"2025-11-09"}],"filePath":"content/boards/500.mdx","readingTime":{"text":"1 min read","minutes":0.67,"time":40200,"words":134},"timestamp":1764299304000},"sourceCode":"$5","children":["$L6","$L7"]}]]}]}],null,"$L8"]}],"loading":null,"isPartial":false}
+6:["$","div",null,{"id":"nextra-skip-nav"}]
+7:["$","main",null,{"data-pagefind-body":true,"children":[["$","img",null,{"src":"/_next/static/media/disassembled.e8a874f9.webp","width":2400,"height":714,"blurWidth":8,"blurHeight":2,"blurDataURL":"data:image/webp;base64,UklGRt8AAABXRUJQVlA4TNMAAAAvB0AAEM1VICICHgiAAAAAAAAAjRAMQAAMCAAAIAAAAAAAAAAAAAAAAABAAAAKAAAQAAAAAA8EggAAAADg/M8bbGwDMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAIAHAlIDAAAAcP73rNekAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAE4IFgEwAAAACc/wD4LgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAACAOX87d3O2of1YdsfYwh44dSj1ZPOTFbFwwoISEQFAA==","alt":"Raspberry Pi 500 Disassembled","className":"my-4 rounded-lg shadow-md w-full h-auto"}],"\n",["$","h1",null,{"className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-bold x:mt-2 x:text-4xl","children":["Raspberry Pi 500","$undefined"]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"The Raspberry Pi 500 is a compact and powerful all-in-one computer that integrates the Raspberry Pi 5 SoC into a keyboard form factor. Designed for ease of use and portability, the Raspberry Pi 500 is ideal for educational purposes, programming, and general computing tasks."}],"\n",["$","h2",null,{"id":"specifications","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["Specifications",["$","$L9",null,{"id":"specifications"}]]}],"\n",["$","img",null,{"src":"/_next/static/media/diagram.ef0f0d3b.jpg","width":960,"height":296,"blurWidth":8,"blurHeight":2,"blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAACAAgDAREAAhEBAxEB/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD14/638aQ+h//Z","alt":"Raspberry Pi 500 Diagram","className":"my-4 rounded-lg shadow-md w-full h-auto"}],"\n",["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Compute"}],": 2.4GHz quad-core 64-bit Arm Cortex-A76 CPU","\n",["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":"512KB/core L2 cache"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"2MB shared L3 cache"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"plus cryptography extensions"}],"\n"]}],"\n"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Memory"}],": 8GB LPDDR4X-4267 SDRAM"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Wi-Fi"}],": Dual-band (2.4GHz and 5.0GHz) IEEE 802.11b/g/n/ac Wi-Fi®"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Bluetooth"}],": 5.0, BLE"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"LAN"}],": Gigabit Ethernet"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"USB"}],": 2 × USB 3.0 port and 1 × USB 2.0 port"]}],"\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n"]}],"\n","$L11","\n","$L12"]}]
+8:["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]
+a:["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"GPIO"}],": Horizontal 40-pin GPIO header"]}]
+b:["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"HDMI"}],": 2 × micro HDMI® port (supports up to 4Kp60)"]}]
+c:["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Video"}],": H.265 (4Kp60 decode)"]}]
+d:["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Graphics"}],": OpenGL ES 3.1 graphics, Vulkan 1.3"]}]
+e:["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Keyboard"}],": 78-, 79- or 83-key compact keyboard (depending on regional variant)"]}]
+f:["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Power"}],": 5V/4A DC via USB connector"]}]
+10:["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Storage"}],": 32GB Class A2 microSD included","\n",["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":"microSD card slot for operating system and data storage"}],"\n"]}],"\n"]}]
+11:["$","hr",null,{"className":"x:my-[2em] nextra-border"}]
+12:["$","img",null,{"src":"/_next/static/media/box.f7537be4.jpg","width":1600,"height":1200,"blurWidth":8,"blurHeight":6,"blurDataURL":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAAGAAgDAREAAhEBAxEB/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC02racxZItKjyRgsxH+BosZ3R//9k=","alt":"Raspberry Pi 500 Box","className":"my-4 rounded-lg shadow-md w-full h-auto"}]
+15:null

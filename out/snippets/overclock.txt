@@ -1,0 +1,29 @@
+
+          #.            #.                          #.
+#.#.#.                #.#.#.#.    #.#.      #.#.    #.    #.#.#.
+#.    #.  #. #.400.#    #.      #.    #.  #.    #.  #.  #.#.
+#.    #.  #.            #.      #.    #.  #.    #.  #.      #.#.
+#.#.#.    #.              #.#.    #.#.      #.#.    #.  #.#.#.
+#. -------------------------------------------------------------
+#. pi-tools: overclocking and more    <https://pi.berlette.com/>
+
+## 1.8 GHz, (Pi 400 default)
+#arm_freq=1800
+#over_voltage=2
+
+## 1.9 GHz
+#arm_freq=1900
+#over_voltage=4
+
+## 2.0 GHz
+#arm_freq=2000
+#over_voltage=5
+
+## 2.1 GHz
+#arm_freq=2100
+#over_voltage=6
+
+## 2.2 GHz (danger zone)
+#arm_freq=2200
+#over_voltage=8
+#force_turbo=1
