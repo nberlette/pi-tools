@@ -1,0 +1,122 @@
+1:"$Sreact.fragment"
+2:I[498099,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"TOCProvider"]
+3:I[211464,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"Sidebar"]
+4:I[201108,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"ClientWrapper"]
+9:I[304464,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"HeadingAnchor"]
+a:I[648909,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],""]
+18:I[701005,["/_next/static/chunks/b278ef62ad8d8d3a.js","/_next/static/chunks/4a2cd4189fc7468e.js"],"OutletBoundary"]
+19:"$Sreact.suspense"
+1b:I[244762,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"ToggleWordWrapButton"]
+1c:I[852227,["/_next/static/chunks/68f2b2fd65a57888.js","/_next/static/chunks/97ee9dbedd1f1d15.js","/_next/static/chunks/60ec3b5abb39739e.js","/_next/static/chunks/8f54e04439ca4191.js"],"CopyToClipboard"]
+5:T10f9,---
+title: "Compute Module 4 (CM4)"
+slug: "boards/cm4"
+date: 2025-11-09
+description: |
+  The Raspberry Pi Compute Module 4 (CM4) is a powerful and flexible solution
+  for embedded applications, offering the same processing power as the
+  Raspberry Pi 4 Model B in a compact form factor. It is designed for
+  industrial and commercial use, providing a range of connectivity options and
+  configurations to suit various project needs.
+tags:
+  - boards
+  - cm4
+  - raspberry pi
+  - compute module
+  - embedded systems
+  - industrial
+  - commercial
+categories:
+  - Hardware
+  - Raspberry Pi
+references:
+  - title: "Raspberry Pi Compute Module 4"
+    url: "https://www.raspberrypi.com/products/compute-module-4/"
+    publisher: "Raspberry Pi Foundation"
+    date: "2020-10-01"
+    accessed: "2025-11-09"
+  - title: "Compute Module 4 Datasheet"
+    url: "https://datasheets.raspberrypi.com/cm4/cm4-datasheet.pdf"
+    publisher: "Raspberry Pi Foundation"
+    date: "2020-10-01"
+    accessed: "2025-11-09"
+---
+
+# Raspberry Pi Compute Module 4 (CM4)
+
+The Raspberry Pi Compute Module 4 (CM4) is a compact and versatile computing solution designed for embedded applications. It offers the same processing power as the Raspberry Pi 4 Model B, making it suitable for a wide range of industrial and commercial projects.
+
+## Key Features
+
+- **Processor**: Broadcom BCM2711 quad-core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz ([up to 1.8GHz with overclocking](./#overclocking))
+- **Memory Options**: Available with 1GB, 2GB, 4GB, or 8GB LPDDR4 RAM
+- **Storage Options**: eMMC flash memory options of 8GB, 16GB, 32GB, or 64GB; also available without eMMC for use with external storage
+- **Connectivity**: Optional wireless connectivity with dual-band 2.4GHz and 5GHz IEEE 802.11ac Wi-Fi, Bluetooth 5.0, and BLE
+- **Form Factor**: Compact module measuring 55mm x 40mm, designed to fit into custom carrier boards
+- **Interfaces**: Exposes a variety of interfaces including PCIe Gen 2 x1, USB 2.0, HDMI, MIPI CSI/DSI, and GPIO pins
+- **Power**: Flexible power options with support for 5V and 12V inputs
+- **Industrial Temperature Range**: Available in both commercial (0°C to +70°C) and industrial (-20°C to +85°C) temperature ranges
+
+## Applications
+
+The CM4 is ideal for a variety of applications, including:
+
+- Industrial automation and control systems
+- Digital signage and kiosks
+- Robotics and IoT devices
+- Custom embedded solutions
+- High-performance computing tasks
+- Edge computing and AI applications
+- Prototyping and development of new hardware products
+
+## Getting Started
+
+To get started with the Raspberry Pi Compute Module 4, you will need a compatible carrier board. The Raspberry Pi Foundation offers an official IO Board for the CM4, which provides access to all the module's interfaces and features. You can also design your own custom carrier board to meet specific project requirements.
+
+Once you have your CM4 and carrier board set up, you can install the Raspberry Pi OS or other compatible operating systems to begin development.
+
+For more detailed information, including technical specifications and design resources, refer to the [Raspberry Pi Compute Module 4 product page](https://www.raspberrypi.com/products/compute-module-4/) and the [Compute Module 4 Datasheet](https://datasheets.raspberrypi.com/cm4/cm4-datasheet.pdf).
+
+## Overclocking
+
+The Raspberry Pi Compute Module 4 can be overclocked to achieve higher performance. However, overclocking **may void your warranty** and **_can lead to instability if not done correctly_**.
+
+> [!TIP]
+>
+> It is strongly recommended to use adequate cooling when overclocking. Always
+> closely monitor your system temperatures when overclocking the processor.
+
+### Raspberry Pi OS (Raspbian)
+
+To overclock the CM4 when using Raspberry Pi OS, you can modify the `/boot/config.txt` file.
+
+Add the following lines to set the CPU frequency to **`1.8GHz`**, and the GPU
+frequency to **`600MHz`**:
+
+```ini
+over_voltage=6 # Increase core voltage for stability
+arm_freq=1800  # Set CPU frequency to 1.8GHz
+gpu_freq=600   # Set GPU frequency to 600MHz
+```
+
+## References
+
+- [Raspberry Pi Compute Module 4](https://www.raspberrypi.com/products/compute-module-4/) - Raspberry Pi Foundation
+- [Compute Module 4 Datasheet](https://datasheets.raspberrypi.com/cm4/cm4-datasheet.pdf) - Raspberry Pi Foundation0:{"buildId":"9EzFpJVmhh1GyQfPEBZPo","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L2",null,{"value":[{"value":"Key Features","id":"key-features","depth":2},{"value":"Applications","id":"applications","depth":2},{"value":"Getting Started","id":"getting-started","depth":2},{"value":"Overclocking","id":"overclocking","depth":2},{"value":"Raspberry Pi OS (Raspbian)","id":"raspberry-pi-os-raspbian","depth":3},{"value":"References","id":"references","depth":2}],"children":[["$","$L3",null,{}],["$","$L4",null,{"metadata":{"title":"Compute Module 4 (CM4)","slug":"boards/cm4","date":"2025-11-09","description":"The Raspberry Pi Compute Module 4 (CM4) is a powerful and flexible solution\nfor embedded applications, offering the same processing power as the\nRaspberry Pi 4 Model B in a compact form factor. It is designed for\nindustrial and commercial use, providing a range of connectivity options and\nconfigurations to suit various project needs.\n","tags":["boards","cm4","raspberry pi","compute module","embedded systems","industrial","commercial"],"categories":["Hardware","Raspberry Pi"],"references":[{"title":"Raspberry Pi Compute Module 4","url":"https://www.raspberrypi.com/products/compute-module-4/","publisher":"Raspberry Pi Foundation","date":"2020-10-01","accessed":"2025-11-09"},{"title":"Compute Module 4 Datasheet","url":"https://datasheets.raspberrypi.com/cm4/cm4-datasheet.pdf","publisher":"Raspberry Pi Foundation","date":"2020-10-01","accessed":"2025-11-09"}],"filePath":"content/boards/cm4.mdx","readingTime":{"text":"3 min read","minutes":2.075,"time":124500,"words":415},"timestamp":1764299304000},"sourceCode":"$5","children":["$L6","$L7"]}]]}]}],null,"$L8"]}],"loading":null,"isPartial":false}
+6:["$","div",null,{"id":"nextra-skip-nav"}]
+7:["$","main",null,{"data-pagefind-body":true,"children":[["$","h1",null,{"className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-bold x:mt-2 x:text-4xl","children":["Raspberry Pi Compute Module 4 (CM4)","$undefined"]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"The Raspberry Pi Compute Module 4 (CM4) is a compact and versatile computing solution designed for embedded applications. It offers the same processing power as the Raspberry Pi 4 Model B, making it suitable for a wide range of industrial and commercial projects."}],"\n",["$","h2",null,{"id":"key-features","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["Key Features",["$","$L9",null,{"id":"key-features"}]]}],"\n",["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Processor"}],": Broadcom BCM2711 quad-core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz (",["$","$La",null,{"href":"./#overclocking","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":"up to 1.8GHz with overclocking"}],")"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Memory Options"}],": Available with 1GB, 2GB, 4GB, or 8GB LPDDR4 RAM"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Storage Options"}],": eMMC flash memory options of 8GB, 16GB, 32GB, or 64GB; also available without eMMC for use with external storage"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Connectivity"}],": Optional wireless connectivity with dual-band 2.4GHz and 5GHz IEEE 802.11ac Wi-Fi, Bluetooth 5.0, and BLE"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Form Factor"}],": Compact module measuring 55mm x 40mm, designed to fit into custom carrier boards"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Interfaces"}],": Exposes a variety of interfaces including PCIe Gen 2 x1, USB 2.0, HDMI, MIPI CSI/DSI, and GPIO pins"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Power"}],": Flexible power options with support for 5V and 12V inputs"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Industrial Temperature Range"}],": Available in both commercial (0°C to +70°C) and industrial (-20°C to +85°C) temperature ranges"]}],"\n"]}],"\n",["$","h2",null,{"id":"applications","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["Applications",["$","$L9",null,{"id":"applications"}]]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"The CM4 is ideal for a variety of applications, including:"}],"\n",["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":"Industrial automation and control systems"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Digital signage and kiosks"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Robotics and IoT devices"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Custom embedded solutions"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"High-performance computing tasks"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Edge computing and AI applications"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Prototyping and development of new hardware products"}],"\n"]}],"\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11","\n","$L12","\n","$L13","\n","$L14","\n","$L15","\n","$L16","\n","$L17"]}]
+8:["$","$L18",null,{"children":["$","$19",null,{"name":"Next.MetadataOutlet","children":"$@1a"}]}]
+b:["$","h2",null,{"id":"getting-started","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["Getting Started",["$","$L9",null,{"id":"getting-started"}]]}]
+c:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"To get started with the Raspberry Pi Compute Module 4, you will need a compatible carrier board. The Raspberry Pi Foundation offers an official IO Board for the CM4, which provides access to all the module’s interfaces and features. You can also design your own custom carrier board to meet specific project requirements."}]
+d:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Once you have your CM4 and carrier board set up, you can install the Raspberry Pi OS or other compatible operating systems to begin development."}]
+e:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["For more detailed information, including technical specifications and design resources, refer to the ",["$","a",null,{"href":"https://www.raspberrypi.com/products/compute-module-4/","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Raspberry Pi Compute Module 4 product page",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]," and the ",["$","a",null,{"href":"https://datasheets.raspberrypi.com/cm4/cm4-datasheet.pdf","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Compute Module 4 Datasheet",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],"."]}]
+f:["$","h2",null,{"id":"overclocking","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["Overclocking",["$","$L9",null,{"id":"overclocking"}]]}]
+10:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["The Raspberry Pi Compute Module 4 can be overclocked to achieve higher performance. However, overclocking ",["$","strong",null,{"children":"may void your warranty"}]," and ",["$","strong",null,{"children":["$","em",null,{"children":"can lead to instability if not done correctly"}]}],"."]}]
+11:["$","div",null,{"className":"nextra-callout x:overflow-x-auto x:not-first:mt-[1.25em] x:flex x:rounded-lg x:border x:py-[.5em] x:pe-[1em] x:contrast-more:border-current! x:bg-green-100 x:dark:bg-green-900/30 x:text-green-700 x:dark:text-green-500 x:border-green-700 x:dark:border-green-800","children":[["$","div",null,{"className":"x:select-none x:text-[1.25em] x:ps-[.6em] x:pe-[.4em]","style":{"fontFamily":"\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""},"data-pagefind-ignore":"all","children":["$","svg",null,{"viewBox":"0 0 16 16","fill":"currentColor","height":".8em","className":"x:mt-[.3em]","children":["$","path",null,{"d":"M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"}]}]}],["$","div",null,{"className":"x:w-full x:min-w-0","children":[["$","b","0",{"children":"Tip"}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"It is strongly recommended to use adequate cooling when overclocking. Always\nclosely monitor your system temperatures when overclocking the processor."}],"\n"]}]]}]
+12:["$","h3",null,{"id":"raspberry-pi-os-raspbian","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Raspberry Pi OS (Raspbian)",["$","$L9",null,{"id":"raspberry-pi-os-raspbian"}]]}]
+13:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["To overclock the CM4 when using Raspberry Pi OS, you can modify the ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":["$","span",null,{"data-line":"","children":["$","span",null,{"style":{"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"},"children":"/boot/config.txt"}]}]}]," file."]}]
+14:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["Add the following lines to set the CPU frequency to ",["$","strong",null,{"children":["$","code",null,{"className":"nextra-code","dir":"ltr","children":["$","span",null,{"data-line":"","children":["$","span",null,{"style":{"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"},"children":"1.8GHz"}]}]}]}],", and the GPU\nfrequency to ",["$","strong",null,{"children":["$","code",null,{"className":"nextra-code","dir":"ltr","children":["$","span",null,{"data-line":"","children":["$","span",null,{"style":{"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"},"children":"600MHz"}]}]}]}],":"]}]
+15:["$","div",null,{"className":"nextra-code x:relative x:not-first:mt-[1.25em]","children":["$undefined",["$","pre",null,{"className":"x:group x:focus-visible:nextra-focus x:overflow-x-auto x:subpixel-antialiased x:text-[.9em] x:bg-white x:dark:bg-black x:py-4 x:ring-1 x:ring-inset x:ring-gray-300 x:dark:ring-neutral-700 x:contrast-more:ring-gray-900 x:contrast-more:dark:ring-gray-50 x:contrast-more:contrast-150 x:rounded-md not-prose","tabIndex":"0","children":[["$","div",null,{"className":"x:group-hover:opacity-100 x:group-focus:opacity-100 x:opacity-0 x:transition x:focus-within:opacity-100 x:flex x:gap-1 x:absolute x:right-4 x:top-2","children":[["$","$L1b",null,{"children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"currentColor","height":"1em","children":["$","path",null,{"d":"M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"}]}]}],["$","$L1c",null,{"className":""}]]}],["$","code",null,{"className":"nextra-code","dir":"ltr","children":[["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"over_voltage"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=6 "}],["$","span",null,{"style":{"--shiki-light":"#6A737D","--shiki-dark":"#6A737D"},"children":"# Increase core voltage for stability"}]]}],"\n",["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"arm_freq"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=1800  "}],["$","span",null,{"style":{"--shiki-light":"#6A737D","--shiki-dark":"#6A737D"},"children":"# Set CPU frequency to 1.8GHz"}]]}],"\n",["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#D73A49","--shiki-dark":"#F97583"},"children":"gpu_freq"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"=600   "}],["$","span",null,{"style":{"--shiki-light":"#6A737D","--shiki-dark":"#6A737D"},"children":"# Set GPU frequency to 600MHz"}]]}]]}]]}]]}]
+16:["$","h2",null,{"id":"references","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["References",["$","$L9",null,{"id":"references"}]]}]
+17:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","a",null,{"href":"https://www.raspberrypi.com/products/compute-module-4/","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Raspberry Pi Compute Module 4",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]," - Raspberry Pi Foundation"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","a",null,{"href":"https://datasheets.raspberrypi.com/cm4/cm4-datasheet.pdf","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Compute Module 4 Datasheet",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]," - Raspberry Pi Foundation"]}],"\n"]}]
+1a:null
