@@ -7,7 +7,9 @@ import "./global.css";
 
 const { docsRepositoryBase } = config;
 
-export default async function RootLayout({ children }) {
+export default async function RootLayout({ children }: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <Head faviconGlyph="">
@@ -85,7 +87,9 @@ export default async function RootLayout({ children }) {
               <Image
                 src={logo}
                 alt="pi-tools"
-                height={48}
+                height={96}
+                width={192}
+                style={{ position: "relative", marginLeft: "-50px" }}
               />
             }
           />
