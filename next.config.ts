@@ -13,5 +13,8 @@ export default withNextra({
   assetPrefix,
   compiler: {},
   compress: true,
-  experimental: {},
+  experimental: {
+    ''
+  },
+  output: "export",
 });

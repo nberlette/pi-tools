@@ -3,13 +3,16 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
+    "**/*.mdx",
     "next-env.d.ts",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
     "**/node_modules/**",
-    "**/.next/**"
+    "**/.next/**",
+    "**/packages/**",
+    "**/scripts/**"
   ],
   "compilerOptions": {
     "target": "esnext",
